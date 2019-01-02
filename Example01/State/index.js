@@ -10,7 +10,6 @@ import { AppRegistry, Text, View, StatusBar } from 'react-native';
 
 export default class HelloWorldApp extends Component {
 
-
   /* Declare 'state' using constructor */ 
   constructor (props) {
      super(props)
@@ -19,13 +18,13 @@ export default class HelloWorldApp extends Component {
      }
   }
 
-
   /* Change 'state' value onlick */ 
   updateState = () => { 
   	this.setState({ text: 'The state is updated' }) 
   }
 
   render() {
+
     return (
       <View>
       	<StatusBar hidden />
@@ -41,6 +40,7 @@ export default class HelloWorldApp extends Component {
 }
 
 AppRegistry.registerComponent('MyApp', () => HelloWorldApp);
+
 
 
 
