@@ -24,9 +24,11 @@ Step3: Start json-server.
 
 	json-server --watch db/db.json --port=5200
 
-Step4: Now we can call this inside our .
+Step4: Now we can call this inside our 'componentDidMount'.
 
-	
+    fetch(`http://localhost:5201/list`)
+      .then(res => res.json())
+      .then(json => this.setState({ text: json }));	
 
 */ 
 
@@ -69,8 +71,6 @@ export default class HelloWorldApp extends Component {
 
 
 AppRegistry.registerComponent('RedCrow', () => HelloWorldApp);
-
-
 
 
 
