@@ -2,7 +2,7 @@
    
    'data' is the source of information for the list.
 
-		data={[
+      data={[
         {key: 'Devin'},
         {key: 'Jackson'},
         {key: 'James'},
@@ -13,9 +13,9 @@
         {key: 'Julie'},
       ]}
 
-	'renderItem' takes one item from 'data' and format it.
-
-		renderItem={({item}) => <Text style={styles.item}>{item.key}</Text>}
+   'renderItem' takes one item from 'data' and format it.     
+   
+      renderItem={({item}) => <Text style={styles.item}>{item.key}</Text>}
 
 */ 
 
@@ -48,3 +48,9 @@ export default class HelloWorldApp extends Component {
 
 
 AppRegistry.registerComponent('RedCrow', () => HelloWorldApp);
+
+
+
+
+
+
