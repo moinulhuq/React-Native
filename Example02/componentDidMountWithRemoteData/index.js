@@ -24,9 +24,9 @@ Step3: Start json-server.
 
 	json-server --watch db/db.json --port=5200
 
-Step4: Now we can call this inside our 'componentDidMount'.
+Step4: Now we can call this inside our .
 
-	http://localhost:5201/list
+	
 
 */ 
 
@@ -47,7 +47,7 @@ export default class HelloWorldApp extends Component {
 
   /* componentDidMount */ 
   componentDidMount(){
-    fetch(`componentDidMount`)
+    fetch(`http://localhost:5201/list`)
       .then(res => res.json())
       .then(json => this.setState({ text: json }));
   }
@@ -58,16 +58,7 @@ export default class HelloWorldApp extends Component {
       <View>
       	<StatusBar hidden />
         <FlatList
-        data={[
-                {key: 'Devin'},
-                {key: 'Jackson'},
-                {key: 'James'},
-                {key: 'Joel'},
-                {key: 'John'},
-                {key: 'Jillian'},
-                {key: 'Jimmy'},
-                {key: 'Julie'},
-              ]}
+        data={this.state.text}
           renderItem={({item}) => <Text style={{color: 'red' , fontSize: 30}}>{item.key}</Text>}
         />
       </View>
@@ -78,6 +69,8 @@ export default class HelloWorldApp extends Component {
 
 
 AppRegistry.registerComponent('RedCrow', () => HelloWorldApp);
+
+
 
 
 
