@@ -31,3 +31,5 @@ Run the below command 2 Times
   yarn add react-native-gesture-handler
   
   react-native link react-native-gesture-handler
+  
+  react-native run-android
