@@ -10,6 +10,7 @@ react-native link react-native-vector-icons
 
 react-native run-ios --simulator="iPhone 7"
 
+#######################################################
 
 Office PC Setup
 
