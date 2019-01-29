@@ -26,6 +26,8 @@ npm install
 
 npm update
 
+react-native link
+
 npm start -- --reset-cache
 
 # Office
