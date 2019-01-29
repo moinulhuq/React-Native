@@ -10,7 +10,25 @@ react-native link react-native-vector-icons
 
 react-native run-ios --simulator="iPhone 7"
 
-#######################################################
+# Clear Cache
+
+cd android
+
+gradlew clean
+
+delete node_modules
+
+yarn cache clean
+
+npm cache clean --force
+
+npm install
+
+npm update
+
+npm start -- --reset-cache
+
+# Office
 
 Office PC Setup
 
