@@ -16,6 +16,8 @@ cd android
 
 gradlew clean
 
+cd ..
+
 rmdir /s node_modules
 
 yarn cache clean
