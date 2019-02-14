@@ -28,6 +28,8 @@ npm install
 
 npm update
 
+npm audit fix
+
 react-native link
 
 npm start -- --reset-cache
