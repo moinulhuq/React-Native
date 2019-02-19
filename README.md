@@ -28,7 +28,7 @@ npm install
 
 npm update
 
-npm audit fix
+npm audit fix --force
 
 react-native link
 
