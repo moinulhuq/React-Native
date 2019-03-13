@@ -57,3 +57,15 @@ Run the below command 2 Times
   react-native link react-native-gesture-handler
   
   react-native run-android
+  
+  
+axios
+moment
+native-base
+react-native-gesture-handler
+react-native-image-crop-picker
+react-native-vector-icons
+react-native-video
+react-native-webview
+react-navigation
+realm
